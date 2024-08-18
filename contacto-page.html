@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Inmobiliaria Ejemplo</title>
+    <style>
+        :root {
+            --color-azul: #3498db;
+            --color-verde-manzana: #4cd137;
+            --color-azul-oscuro: #2980b9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: var(--color-azul);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: var(--color-azul-oscuro);
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: var(--color-verde-manzana);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+        h2 {
+            color: var(--color-azul-oscuro);
+            border-bottom: 2px solid var(--color-verde-manzana);
+            padding-bottom: 10px;
+        }
+        .contacto-info {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contacto-info h3 {
+            color: var(--color-azul);
+        }
+        .contacto-form {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 150px;
+        }
+        button {
+            background-color: var(--color-verde-manzana);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inmobiliaria Ejemplo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inmobiliaria-webpage.html">Inicio</a></li>
+            <li><a href="apartamentos-page.html">Apartamentos</a></li>
+            <li><a href="casas-page.html">Casas</a></li>
+            <li><a href="chacras-page.html">Chacras</a></li>
+            <li><a href="nosotros-page.html">Nosotros</a></li>
+            <li><a href="contacto-page.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Contacto</h2>
+        <div class="contacto-info">
+            <h3>Información de Contacto</h3>
+            <p><strong>Dirección:</strong> Av. Principal 1234, Ciudad Ejemplo, País</p>
+            <p><strong>Teléfono:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> info@inmobiliariaejemplo.com</p>
+            <p><strong>Horario de atención:</strong> Lunes a Viernes de 9:00 a 18:00</p>
+        </div>
+
+        <div class="contacto-form">
+            <h3>Envíanos un Mensaje</h3>
+            <form target="_blank" action="https://formsubmit.co/lunfarda2@gmail.com" method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por su mensaje. Nos pondremos en contacto con usted pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Inmobiliaria Ejemplo</title>
+    <style>
+        :root {
+            --color-azul: #3498db;
+            --color-verde-manzana: #4cd137;
+            --color-azul-oscuro: #2980b9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: var(--color-azul);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: var(--color-azul-oscuro);
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: var(--color-verde-manzana);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+        h2 {
+            color: var(--color-azul-oscuro);
+            border-bottom: 2px solid var(--color-verde-manzana);
+            padding-bottom: 10px;
+        }
+        .historia {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .historia h3 {
+            color: var(--color-azul);
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .galeria-item {
+            width: 30%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .galeria-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .galeria-item p {
+            font-style: italic;
+        }
+        iframe{
+            margin-left: 25%;
+        }
+
+        footer {
+            background-color: var(--color-azul-oscuro);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .footer-section {
+            flex: 1;
+            margin-bottom: 1rem;
+            min-width: 200px;
+        }
+        .footer-section h3 {
+            color: var(--color-verde-manzana);
+            margin-bottom: 1rem;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 2rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inmobiliaria Ejemplo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inmobiliaria-webpage.html">Inicio</a></li>
+            <li><a href="apartamentos-page.html">Apartamentos</a></li>
+            <li><a href="casas-page.html">Casas</a></li>
+            <li><a href="chacras-page.html">Chacras</a></li>
+            <li><a href="nosotros-page.html">Nosotros</a></li>
+            <li><a href="contacto-page.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Nuestra Historia</h2>
+        <div class="historia">
+            <h3>Más de 30 años de experiencia en el mercado inmobiliario</h3>
+            <p>Fundada en 1990 por los hermanos Juan y María Pérez, Inmobiliaria Ejemplo nació con la visión de transformar la manera en que las personas encuentran su hogar ideal. Desde nuestros humildes comienzos en una pequeña oficina en el centro de la ciudad, hemos crecido hasta convertirnos en una de las inmobiliarias más reconocidas del país.</p>
+            <p>A lo largo de estas tres décadas, hemos ayudado a miles de familias a encontrar el hogar de sus sueños, ya sea un acogedor apartamento en el corazón de la ciudad, una espaciosa casa familiar en los suburbios o una tranquila chacra en el campo.</p>
+            <p>Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido crecer y expandirnos. Hoy contamos con un equipo de más de 50 profesionales altamente capacitados y oficinas en las principales ciudades del país.</p>
+            <p>En Inmobiliaria Ejemplo, no solo vendemos propiedades, creamos hogares y construimos comunidades. Nuestro éxito se basa en la confianza que nuestros clientes depositan en nosotros, y nos esforzamos cada día por superar sus expectativas.</p>
+        </div>
+
+        <h2>Nuestra Empresa en Imágenes</h2>
+        <div class="galeria">
+            <div class="galeria-item">
+                <img src="/img/historia1.webp" alt="Fundadores de la empresa">
+                <p>Juan y María Pérez, fundadores de Inmobiliaria Ejemplo (1960)</p>
+            </div>  
+            <div class="galeria-item">
+                <img src="/img/historia2.jpg" alt="Primera oficina">
+                <p>Nuestra primera oficina en el centro de la ciudad (1970)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="/img/historia3.jpg" alt="Equipo actual">
+                <p>Nuestro equipo actual de profesionales (2024)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="/img/historria5.jpg" alt="Oficina principal">
+                <p>Oficina principal de Inmobiliaria Ejemplo (2024)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="/img/historia6.jpg" alt="Premio al mejor servicio">
+                <p>Recibiendo el premio al Mejor Servicio Inmobiliario (2023)</p>
+            </div>
+            <div class="galeria-item">
+                <img src="/img/historia7.jpg" alt="Proyecto comunitario">
+                <p>Participando en proyectos comunitarios de vivienda social (2022)</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.9263975166575!2d-56.20644744220472!3d-34.09891132648823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a102a711555555%3A0x4de71cd3016539d2!2sParador%20Isabela!5e0!3m2!1ses!2suy!4v1724005456456!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </div>
+<br>
+<br>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Inmobiliaria Ejemplo</h3>
+            <p>Encontramos el hogar perfecto para ti.</p>
+            <p>Av. Principal 1234, Ciudad Ejemplo</p>
+            <p>Teléfono: +1 234 567 890</p>
+            <p>Email: info@inmobiliariaejemplo.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="inmobiliaria-webpage.html">Inicio</a></li>
+                <li><a href="apartamentos-page.html">Apartamentos</a></li>
+                <li><a href="casas-page.html">Casas</a></li>
+                <li><a href="chacras-page.html">Chacras</a></li>
+                <li><a href="nosotros-page.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Servicios</h3>
+            <ul>
+                <li><a href="#">Compra de propiedades</a></li>
+                <li><a href="#">Venta de propiedades</a></li>
+                <li><a href="#">Alquiler</a></li>
+                <li><a href="#">Tasaciones</a></li>
+                <li><a href="#">Asesoría legal</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="www.facebook.com" aria-label="Facebook">📘</a>
+                <a href="www.instagram.com" aria-label="Instagram">📷</a>
+                <a href="www.linkedin.com" aria-label="LinkedIn">💼</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Inmobiliaria Ejemplo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    
+</body>
+</html>

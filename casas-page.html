@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas - Inmobiliaria Ejemplo</title>
+    <style>
+        :root {
+            --color-azul: #3498db;
+            --color-verde-manzana: #4cd137;
+            --color-azul-oscuro: #2980b9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: var(--color-azul);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: var(--color-azul-oscuro);
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: var(--color-verde-manzana);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+        h2 {
+            color: var(--color-azul-oscuro);
+            border-bottom: 2px solid var(--color-verde-manzana);
+            padding-bottom: 10px;
+        }
+        .casa {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .casa h3 {
+            color: var(--color-azul);
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .galeria img {
+            width: 32%;
+            margin-bottom: 1%;
+            border-radius: 5px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .caracteristicas, .comodidades {
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            width: 48%;
+        }
+        .caracteristicas h4, .comodidades h4 {
+            color: var(--color-verde-manzana);
+            margin-top: 0;
+        }
+        .ubicacion {
+            background-color: #e3f2fd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .ubicacion h4 {
+            color: var(--color-azul);
+            margin-top: 0;
+        }
+        footer {
+        background-color: var(--color-azul-oscuro);
+        color: white;
+        padding: 2rem 0;
+        margin-top: 2rem;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-section {
+        flex: 1;
+        margin-bottom: 1rem;
+        min-width: 200px;
+    }
+    .footer-section h3 {
+        color: var(--color-verde-manzana);
+        margin-bottom: 1rem;
+    }
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .footer-section ul li {
+        margin-bottom: 0.5rem;
+    }
+    .footer-section ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+    .social-icons a {
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        margin-top: 2rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inmobiliaria Ejemplo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inmobiliaria-webpage.html">Inicio</a></li>
+            <li><a href="apartamentos-page.html">Apartamentos</a></li>
+            <li><a href="casas-page.html">Casas</a></li>
+            <li><a href="chacras-page.html">Chacras</a></li>
+            <li><a href="nosotros-page.html">Nosotros</a></li>
+            <li><a href="contacto-page.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Nuestras Casas</h2>
+        <div id="listaCasas"></div>
+    </div>
+    <br>
+<br>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Inmobiliaria Ejemplo</h3>
+            <p>Encontramos el hogar perfecto para ti.</p>
+            <p>Av. Principal 1234, Ciudad Ejemplo</p>
+            <p>Teléfono: +1 234 567 890</p>
+            <p>Email: info@inmobiliariaejemplo.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="inmobiliaria-webpage.html">Inicio</a></li>
+                <li><a href="apartamentos-page.html">Apartamentos</a></li>
+                <li><a href="casas-page.html">Casas</a></li>
+                <li><a href="chacras-page.html">Chacras</a></li>
+                <li><a href="nosotros-page.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Servicios</h3>
+            <ul>
+                <li><a href="#">Compra de propiedades</a></li>
+                <li><a href="#">Venta de propiedades</a></li>
+                <li><a href="#">Alquiler</a></li>
+                <li><a href="#">Tasaciones</a></li>
+                <li><a href="#">Asesoría legal</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="www.facebook.com" aria-label="Facebook">📘</a>
+                <a href="www.instagram.com" aria-label="Instagram">📷</a>
+                <a href="www.linkedin.com" aria-label="LinkedIn">💼</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Inmobiliaria Ejemplo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <script>
+        const casas = [
+            {
+                id: 1,
+                titulo: "Casa Familiar con Jardín",
+                descripcion: "Hermosa casa con amplio jardín, ideal para familias que buscan espacio y tranquilidad.",
+                fotos: ["/img/Casa1.jpg", "/img/casa2.avif", "/img/casa3.jpg"],
+                caracteristicas: ["4 habitaciones", "3 baños", "Garaje para 2 coches", "250 m² construidos", "500 m² de terreno"],
+                comodidades: ["Jardín amplio", "Piscina", "Terraza", "Sala de juegos"],
+                ubicacion: "Calle de los Olivos 123, Urbanización Las Palmas, Ciudad Ejemplo"
+            },
+            {
+                id: 2,
+                titulo: "Casa Moderna con Vista al Mar",
+                descripcion: "Espectacular casa de diseño moderno con impresionantes vistas al mar y acceso directo a la playa.",
+                fotos: ["/img/casa4.jpg", "/img/casa5.jpg", "/img/casa6.webp"],
+                caracteristicas: ["3 habitaciones", "2 baños", "Estudio", "200 m² construidos", "300 m² de terreno"],
+                comodidades: ["Piscina infinita", "Terraza con vista al mar", "Jardín zen", "Sistema de domótica"],
+                ubicacion: "Avenida del Mar 789, Costa del Sol, Ciudad Ejemplo"
+            }
+        ];
+
+        function mostrarCasas() {
+            const listaCasas = document.getElementById('listaCasas');
+            casas.forEach(casa => {
+                const casaElement = document.createElement('div');
+                casaElement.className = 'casa';
+                casaElement.innerHTML = `
+                    <h3>${casa.titulo}</h3>
+                    <p>${casa.descripcion}</p>
+                    <div class="galeria">
+                        ${casa.fotos.map(foto => `<img src="${foto}" alt="Foto de ${casa.titulo}">`).join('')}
+                    </div>
+                    <div class="info">
+                        <div class="caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                ${casa.caracteristicas.map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="comodidades">
+                            <h4>Comodidades:</h4>
+                            <ul>
+                                ${casa.comodidades.map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ubicacion">
+                        <h4>Ubicación:</h4>
+                        <p>${casa.ubicacion}</p>
+                    </div>
+                `;
+                listaCasas.appendChild(casaElement);
+            });
+        }
+
+        window.onload = mostrarCasas;
+    </script>
+</body>
+</html>
